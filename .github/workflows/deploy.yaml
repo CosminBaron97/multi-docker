@@ -29,7 +29,7 @@ jobs:
           docker build -t cosmin/multi-server ./server
           docker build -t cosmin/multi-worker ./worker
 
-      - name: Push images to Docker Hub
+      - name: Push images to Docker Hub (Remote)
         run: |
           docker push cosmin/multi-client
           docker push cosmin/multi-nginx
